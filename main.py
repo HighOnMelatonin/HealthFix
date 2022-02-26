@@ -1,10 +1,13 @@
 import flask
 from requests import get
+from flask import render_template
 
 
-def moh():
+def gov():
     '''
-    Gets live covid updates from www.moh.gov.sg
+    Gets live covid updates from www.moh.gov.sg, note, these are new cases
+
+    :return: tuple(date, artCount, pcrCount, totalCount, "https://www.gov.sg/features/covid-19")
     '''
 
     def fetch_result():
@@ -46,14 +49,27 @@ def moh():
     return (date, artCount, pcrCount, totalCount, "https://www.gov.sg/features/covid-19")
 
 
-
-'''
-    dateStart = html.find('as of')
-    dateEnd = html[dateStart:].find()
-
-    start = html.find()
-    end = html[start:].find()'''
+def vaccReg():
+    '''
+    Vaccine registration
+    '''
+    url = 'https://appointment.vaccine.gov.sg/'
 
 
-print(moh())
+
+
+app = flask.Flask(__name__)
+
+@app.route('/')
+def home():
+    newCases = gov()
+    return render_template('.html', newCases = newCases)
+
+
+
+@app.route('/about')
+def about():
+    pass
+
+
 
