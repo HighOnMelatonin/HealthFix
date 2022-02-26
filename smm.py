@@ -15,6 +15,7 @@ def workplace():
     linkStart = html.find('<a rel="noopener noreferrer" class="link--external" href="')
     linkEnd = html[linkStart:].find(' target="_blank">')
     link = html[linkStart + 58: linkStart + linkEnd]
+    link = link[:-1]
 
     return link
 
