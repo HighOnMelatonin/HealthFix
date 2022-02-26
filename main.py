@@ -14,7 +14,7 @@ def home():
     workplace = smm.workplace()
     vacSignup = vaccination.vaccineRegistration()
 
-    return render_template('home.html', newCases = newCases, updates = updates, workplace = workplace, vacSignup = vacSignup)
+    return render_template('final.html', newCases = newCases, updates = updates, workplace = workplace, vacSignup = vacSignup)
 
 
 
