@@ -16,7 +16,7 @@ def gov():
 
     html = fetch_result()
 
-    caseStart = html.fnd('<span style="font-family: Arial; font-size: 24px; color: #000000;">')
+    caseStart = html.find('<span style="font-family: Arial; font-size: 24px; color: #000000;">')
     caseEnd = html[caseStart + 1:].find('<span style="font-family: Arial; font-size: 24px; color: #000000;">')
 
     caseSummary = html[caseStart: caseStart + caseEnd]
