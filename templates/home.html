@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<head>
-<link rel = "stylesheet" href = "../static/styles.css">
-<title>Home page</title>
-</head>
-<a href = 'final.html'>Health news</a>
-<a href = 'final2.html'>Mental health</a>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "../static/styles.css">
+        <title>Home page</title>
+    </head>
+    <body>
+            
+        <a href = '{{ url_for("covid") }}'>Health news</a>
+        <a href = '{{ url_for("mentalHealth") }}'>Mental health</a>
+    </body>
 </html>
