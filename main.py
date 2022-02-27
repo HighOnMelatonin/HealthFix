@@ -17,6 +17,9 @@ def home():
     return render_template('final.html', newCases = newCases, updates = updates, workplace = workplace, vacSignup = vacSignup)
 
 
+@app.route('/mental-health/')
+def mentalHealth():
+    return render_template('final2.html')
 
 
 if __name__ == '__main__':
