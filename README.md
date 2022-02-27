@@ -10,6 +10,8 @@ Find the latest covid news and government releases in one place, links for you t
 The website is not live, to get it running on your local host, run main.py first and then go to chrome and type localhost:5000
 
 
+Tag the discord bot to get the help message on discord, even though the bot my not have all the features the website has, it allows users to quickly obtain covid related news just by interacting with the bot.
+
 
 
 
