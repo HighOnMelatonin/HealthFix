@@ -38,8 +38,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('<@&947339662681317399>'):
-        print(message.content)
+    if message.content.startswith('<@!947335354162217030>'):
         title, helpmessage = sendHelp()
         await message.channel.send(embed = discord.Embed(title = title, description = helpmessage))
 
