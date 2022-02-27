@@ -1,4 +1,4 @@
-# Placeholder
+# HealthFix
 
 Find the latest covid news and government releases in one place, links for you to read further will be included. Mental health section is included to cheer people up in these trying times.
 
